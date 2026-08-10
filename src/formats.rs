@@ -44,6 +44,7 @@ pub mod nw_wm_upg;
 pub mod utv_qterics;
 pub mod epson_pj;
 pub mod ncfw;
+pub mod utv;
 
 pub mod pup;
 
@@ -315,6 +316,11 @@ pub fn get_registry() -> Vec<Format> {
             name: "ncfw",
             detector_func: crate::formats::ncfw::is_ncfw_file,
             extractor_func: crate::formats::ncfw::extract_ncfw,
+        },
+        Format {
+            name: "utv",
+            detector_func: crate::formats::utv::is_utv_file,
+            extractor_func: crate::formats::utv::extract_utv,
         },
     ]
 }
