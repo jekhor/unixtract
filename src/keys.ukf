@@ -311,7 +311,7 @@ collection "UTV_QTERICS": { #base64-encoded decrypted private keys ("key" from i
 # https://github.com/openlgtv/epk2extract
 collection "EPK": {
     # unknown
-    "unknown":                                             {x"214BF3C129547AF31D32A5ECB47421"},
+    "unknown":                                             {x"214BF3C129547AF31D32A5ECB4742192"},
 
     # common
     "BCM35230/early MTK5369 and LG1152":                   {x"1F1E1D1C1B1A19180706050403020100"},
@@ -330,6 +330,7 @@ collection "EPK": {
 
     "m1 - MStar non-webOS":                                {x"2F534ABE34801A36B7DA6B3EB1C04AD4"},
     "m1a - MStar non-webOS (L15 signage)":                 {x"7B2CA5943D2E752CF58606228C5B2DAD"},
+    "m1ap - MStar L16":                                    {x"1CEE92D0FC2931C597A549789FCD06B9"},
 
     # MStar ARM
     "m2 - MStar SimpleSmart":                              {x"D55C6864035A8C8A2B35A6D6C4565596"},
@@ -410,6 +411,7 @@ collection "EPK": {
     "k24t - Realtek webOS 9 StanbyME 2 (2024)":            {x"1A8ADAB21D9FF995677DB32BCE2E0CD559AE86840EBF4A696872076E37DFFE8F"},
     "k25lp - Realtek webOS 10 (2025)":                     {x"25DF24166745B52EAB661455BED43DE376320FAA1F7824877B938DB869308B18"},
     "k24n - Realtek webOS 10 (2025)":                      {x"B2E8C3E214F044B823916E48FA074E606C7C5CD5E6902B6F99BD903DAC0C792F"},
+    "k26 - Realtek webOS 11 (2026)":                       {x"9F139A93EA3405C32ED6C3699742C58AA5F1E5133A7DEA485A5FA21A76A3B771"},
 
     # Realtek WEE (webOS)
     "k6lpwee - Realtek webOS 5 (2020)":                    {x"B23981FD3642CDF401E7A0C2FADBDA4399B6AAF9600B802144933B4F4E5855EA"},
