@@ -93,6 +93,11 @@ collection "MSD11": {
 # mstar
 key "MSTAR_DEFAULT_UPGRADE_KEY": {x"0007ff4154534d92fc55aa0fff0110e0"}
 
+collection "MSTAR_SECURE": {
+	#default AES256 upgrade key "CKB_D_UPG_Key256"
+	"default":				{x"d43ba86d31b3bd0091ef13b8e1e0ac912a88c5fe593f8e401b44976d6d04322f"},
+}
+
 # mtk pkg
 key "MTK_PKG_OLD_HEADER_KEY": {x"09291094", x"757CBE04"} # (key, iv)
 key "MTK_PKG_OLD_DATA_IV": 	  {x"727CBE04"}

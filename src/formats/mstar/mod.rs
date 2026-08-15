@@ -160,8 +160,15 @@ pub fn extract_mstar(app_ctx: &AppContext, _ctx: Box<dyn Any>) -> Result<(), Box
                 continue
             } else if compression == CompressionType::Sparse {
                 println!("- Unsparsing...");
-                unsparse_to_file(&data, output_path)?;
-                println!("-- Saved file!");
+                // some mstar images use a weird/modified sparse format, handle failure here until its properly implemented
+                match unsparse_to_file(&data, output_path) {
+                    Ok(_) => {
+                        println!("-- Saved file!");
+                    },
+                    Err(e) => {
+                        println!("-- Warning: sparse extraction failed - {}", e);
+                    }
+                }
                 i += 1;
                 continue
             } else {

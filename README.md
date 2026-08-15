@@ -133,13 +133,15 @@ Tip: if you have split ROM (.ROM-00 and .ROM-01), extract both into the same fol
 **Notes:** All files should be supported, includes lzop, lz4, lzma, sparse_write support  
 **Options:**  
 `mstar:keep_unknown` - Save data with unknown destination.  
-※ Support `dump_dec_hdrs` option (will save the script)   
+※ Support `dump_dec_hdrs` option (will save the script)  
+
+## MStar/Mediatek upgrade bin (Secure, new)
+**Used in:** Newer MStar/Mediatek-based TVs with Secure upgrade mode (encrypted+signed)  
+**Notes:** **Depends on keys** - see keys.ukf. This use `mstar` extractor above after decrypting.   
 
 ## MStar upgrade bin (Secure, old)
 **Used in:** Older MStar-based TVs with Secure upgrade mode (encrypted+signed)  
-**Notes:** Only default upgrade key is supported. This use the extractor above after decrypting.  
-**Options:**  
-`mstar_secure_old:keep_decrypted` - Keep decrypted file (it will be deleted by default).  
+**Notes:** Only default upgrade key is supported. This use `mstar` extractor above after decrypting.   
 
 ## MediaTek BDP
 **Used in:** Many MediaTek-based Blu-Ray players (LG, Samsung, Philips, Panasonic...)  
@@ -158,17 +160,17 @@ Tip: if you have split ROM (.ROM-00 and .ROM-01), extract both into the same fol
 **Options:**       
 ※ Support `dump_dec_hdrs` option
 
-## NCFW
-**Used in:** Canon Printers  
-**Notes:** None  
-**Thanks to:** https://github.com/synacktiv/canon-mf644/   
-
 ## MediaTek PKG
 **Used in:** MediaTek-based TVs (Sony, Philips, Panasonic, Sharp...)  
 **Notes:** All files should be supported, decryption + decompression, however some Philips files use custom keys - most are included some could be missing  
 **Thanks to:** https://github.com/openlgtv/epk2extract   
 **Options:**     
 ※ Support `dump_dec_hdrs` option
+
+## NCFW
+**Used in:** Canon Printers  
+**Notes:** None  
+**Thanks to:** https://github.com/synacktiv/canon-mf644/   
 
 ## Novatek PKG (NFWB)
 **Used in:** Some older Novatek-based TVs (LG, Philips)  
@@ -210,7 +212,7 @@ Tip: if you have split ROM (.ROM-00 and .ROM-01), extract both into the same fol
 
 ## Panasonic Blu-Ray
 **Used in:** Panasonic Blu-Ray Players and Recorders  
-**Common names:** `PANA_DVD.FRM`, `PANA_ESD.FRM`, `PANAEDVD.FRM`      
+**Common names:** `PANA_DVD.FRM`, `PANA_ESD.FRM`, `PANAEUSB.FRM`      
 **Notes:** **Depends on keys** - see keys.ukf (Included keys should work for 99% of players released in and before 2014, and some released in 2018), Note that there is currently an issue with MAIN in some very ancient files not extracting correctly.   
 **Options:**   
 `pana_dvd:split_main` - Automatically split the MAIN module into seperate partitions.   

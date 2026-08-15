@@ -65,12 +65,7 @@ pub fn extract_mstar_secure_old(app_ctx: &AppContext, ctx: Box<dyn Any>) -> Resu
         extract_mstar(&in_ctx, result)?;
     } else {
         return Err("detection failed on decrypted data".into());                 
-    }
-
-    //delete decrypted file unless asked not to
-    if !app_ctx.has_option("mstar_secure_old:keep_decrypted") {
-        fs::remove_file(&output_path)?;
-    }            
+    }    
 
     Ok(())
 }
