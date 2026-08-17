@@ -46,6 +46,12 @@ Options:
 **Common names:** `MainAppImage.cd5`   
 **Notes:** Decryption is not supported.
 
+## DWCP (PUP)  
+**Used in:** PlayStation Portal  
+**Common names:** `PS_Portal_remote_player_x.x.x.pup`   
+**Notes:** Version 6.0.1+ seems to use a different key and is not supported.  
+**Thanks to:** https://www.psdevwiki.com/ps5/PS_Portal
+
 ## EPK v1  
 **Used in:** LG TVs before ~2010  
 **Notes:** None, all files should be supported  

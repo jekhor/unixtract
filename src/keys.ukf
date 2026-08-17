@@ -1,5 +1,9 @@
 # unixtract key file
 
+# DWCP PS Portal Master Key
+# https://www.psdevwiki.com/ps5/PS_Portal
+key "DWCP_PSP_KEY": {x"3515A88F33557DF133FBF208D63B0AAF"}
+
 #epsonpj key
 key "EPSONPJ": {
 	x"3437303530300000", x"3732313434370000"

@@ -48,6 +48,7 @@ pub mod ncfw;
 pub mod utv;
 
 pub mod pup;
+pub mod dwcp;
 
 pub mod msd;
 pub mod msd10;
@@ -327,6 +328,11 @@ pub fn get_registry() -> Vec<Format> {
             name: "mstar_secure_new",
             detector_func: crate::formats::mstar_secure_new::is_mstar_secure_new_file,
             extractor_func: crate::formats::mstar_secure_new::extract_mstar_secure_new,
+        },
+        Format {
+            name: "dwcp",
+            detector_func: crate::formats::dwcp::is_dwcp_file,
+            extractor_func: crate::formats::dwcp::extract_dwcp,
         },
     ]
 }
