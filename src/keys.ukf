@@ -63,9 +63,10 @@ key "INVINCIBLE_IMAGE_V3": {
 collection "MSD10": {
     "EchoP":	{x"3ef6067262cf0c678598bff22169d1f1ea57c284"}, #T-ECP* - 2012 Samsung
     "X12":		{x"010287362008be691dc8c9f6d2c5ca5aa210ecb8"}, #T-MST12* - 2013 Mstar
+	"FoxB": 	{x"c353dd0464134c6a7d65b78b3e911a85e26cf168"}, #B-FXB* - 2013 Blu-Ray
     "X14":		{x"d145f1d55aee3ef520d194e1275b429c580baacb"}, #T-MST14*/T-MS14J*/T-M14HK* - 2014 Mstar
     "NT14M":	{x"95d01e0bae861a05695bc8a6edb2ea835a09accd"}, #T-NT14M*/T-N14MJ* - 2014 Novatek (low-end)
-
+	
     # github.com/bugficks/msddecrypt
     "HawkM":	{x"1ac8989ff57db5e75ea67b033050871c"}, #T-HKM* - 2015
     "HawkP":	{x"cce8a3ef92f3e94895999e928f4dd6c3"}, #T-HKP* - 2015
