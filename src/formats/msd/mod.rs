@@ -69,3 +69,17 @@ pub fn is_valid_ouith(data: &[u8]) -> bool{
            &data[262..312] == b"Tizen Software Upgrade Tree Binary Format ver. 1.9" ||
            &data[518..568] == b"Tizen Software Upgrade Tree Binary Format ver. 1.9"       //new signature ver
 }
+
+pub fn is_valid_ouith_old(data: &[u8]) -> bool{
+    if data.len() < 128+8 {
+        return false;
+    }
+    //sanity check 1: size of first chunk header smaller than data size
+    if u32::from_be_bytes(data[128..132].try_into().unwrap()) > data.len() as u32 {
+        return false;
+    }
+    
+    //sanity check 2: top level descriptor. it can only be ID 1(OUUpgradeItemDesc) or 2(OUGroupDesc)
+    let v = u16::from_be_bytes(data[136/* signature(128) + chunk header(8) */..138].try_into().unwrap());
+    return v == 0x01 || v == 0x02;
+}
